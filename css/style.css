@@ -185,6 +185,25 @@ nav li:not(:last-child):after {
 .contacts h1 {
     margin-bottom: 27px;
 }
+.contacts h3 {
+    margin-bottom: 10px;
+}
+/*icons*/
+.small-icon {
+    display: inline-block;
+    height: 11px;
+    width: 13px;
+    margin-right: 10px;
+}
+.icon-address {
+    background: url('../images/contact-icons.png') no-repeat;
+}
+.icon-phone {
+    background: url('../images/contact-icons.png') no-repeat -13px 0px;
+}
+.icon-mail {
+    background: url('../images/contact-icons.png') no-repeat -26px 0px;
+}
 /*placeholder color*/
 /* do not group these rules */
 *::-webkit-input-placeholder {
