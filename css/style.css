@@ -46,6 +46,15 @@ table {
 body {
     font-family: 'Lato', Tahoma, sans-serif;
 }
+/*clearfix*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
 /*container*/
 .container {
     width: 1020px;
@@ -63,6 +72,11 @@ h3 {
     font-size: 18px;
     font-weight: 900;
     margin-bottom: 5px;
+}
+.small-description {
+    font-size: 12px;
+    line-height: 21.56px;
+    font-weight: 300;
 }
 /*header*/
 header {
@@ -115,7 +129,7 @@ header a:hover {
 .works,
 .about,
 .contacts {
-    padding-top: 62px;
+    padding: 66px 0;
 }
 /*slider*/
 .slider {
@@ -128,7 +142,6 @@ header a:hover {
     font-size: 0;
     color: #666d89;
     background: #f2f2f2;
-    height: 494px;
     border-bottom: 6px solid #fff;
 }
 .feature {
@@ -149,10 +162,6 @@ header a:hover {
     height: 100%;
     margin-right: 20px;
 }
-.feature p {
-    font-size: 12px;
-    line-height: 21.56px;
-}
 .section-description {
     font-size: 18px;
     line-height: 30px;
@@ -160,20 +169,35 @@ header a:hover {
 }
 /*works*/
 .works {
-    height: 863px;
     background: #2d303a;
     border-bottom: 6px solid #323746;
 }
 /*about*/
 .about {
     background: #f2f2f2;
-    height: 728px;
     border-bottom: 6px solid #fff;
+    color: #666d89;
+    font-size: 0;
+}
+.worker {
+    display: inline-block;
+    margin-right: 18px;
+    width: 300px;
+}
+.worker:last-child {
+    margin-right: 0;
+}
+.worker-photo {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 19px;
+}
+.worker .social-icons {
+    float: left;
 }
 /*contacts*/
 .contacts {
     background: #f06c64;
-    height: 648px;
     border-bottom: 6px solid #ea676b;
     color: #f0d8d9;
 }
@@ -185,10 +209,6 @@ header a:hover {
     float: right;
     width: 300px;
     text-align: justify;
-}
-.contacts-info p {
-    font-size: 12px;
-    line-height: 21.56px;
 }
 .contacts input,
 .contacts textarea {
@@ -212,6 +232,8 @@ header a:hover {
 }
 .contact-details {
     margin-top: 20px;
+    font-size: 12px;
+    line-height: 21.56px;
 }
 /*icons*/
 .small-icon {
