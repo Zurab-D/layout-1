@@ -6,7 +6,19 @@ var buttonAll = $('.works-button')[0],
     worksWeb = $('.category-web'),
     worksGraphic = $('.category-graphic'),
     worksArt = $('.category-art'),
-    worksAll = $('.work-image-link');
+    worksAll = $('.work-image-link'),
+    showOnly = function (cat) {
+        return function (evt) {
+            $('.work-buttons').children().each(function () {
+                $(this).removeClass('active');
+            });
+            $(this).addClass('active');
+            worksAll.hide();
+            cat.show('fast', function () {
+                cat.appendTo('.works-flow');
+            });
+        };
+    };
 
 $(document).ready(function () {
     "use strict";
@@ -16,25 +28,8 @@ $(document).ready(function () {
         });
     });
 
-    $(buttonWeb).on('click', function () {
-        worksAll.hide('slow');
-        worksWeb.show('slow', function () {
-            worksWeb.appendTo('.works-flow');
-        });
-    });
-
-    $(buttonGraphic).on('click', function () {
-        worksAll.hide('slow');
-        worksGraphic.show('slow', function () {
-            worksGraphic.appendTo('.works-flow');
-        });
-    });
-
-    $(buttonArt).on('click', function () {
-        worksAll.hide('slow');
-        worksArt.show('slow', function () {
-            worksArt.appendTo('.works-flow');
-        });
-    });
+    $(buttonWeb).on('click', showOnly(worksWeb));
+    $(buttonGraphic).on('click', showOnly(worksGraphic));
+    $(buttonArt).on('click', showOnly(worksArt));
 
 });
