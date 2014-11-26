@@ -22,6 +22,11 @@ var buttonAll = $('.works-button')[0],
 
 $(document).ready(function () {
     "use strict";
+    $(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+        padding : 0
+    });
     $(buttonAll).on('click', function () {
         worksAll.show('slow', function () {
             worksAll.appendTo('.works-flow');
