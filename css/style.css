@@ -96,6 +96,8 @@ header a:hover {
     color: #f0d8d9;
 }
 .logo {
+    display: inline-block;
+    float: left;
     font-size: 25px;
 }
 .logo:after {
@@ -134,7 +136,6 @@ header a:hover {
 /*slider*/
 .slider {
     background: #f06c64;
-    height: 594px;
     border-bottom: 6px solid #ea676b;
 }
 /*features*/
@@ -206,8 +207,9 @@ header a:hover {
     float: left;
 }
 .contacts-info {
-    float: right;
+    float: left;
     width: 300px;
+    margin-left: 21px;
     text-align: justify;
 }
 .contacts input,
