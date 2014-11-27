@@ -32,9 +32,29 @@ $(document).ready(function () {
             worksAll.appendTo('.works-flow');
         });
     });
-
     $(buttonWeb).on('click', showOnly(worksWeb));
     $(buttonGraphic).on('click', showOnly(worksGraphic));
     $(buttonArt).on('click', showOnly(worksArt));
 
+    $(function () {
+        $('#slides').slidesjs({
+        width: 800,
+        height: 500,
+        callback: {
+        loaded: function(){
+          $('.slidesjs-pagination, .slidesjs-navigation').hide(0);
+        }
+        }
+        });
+    });
+
+    $('.control-next').click(function(e) {
+        e.preventDefault();
+        $('.slidesjs-next').click();
+    });
+
+    $('.control-prev').click(function(e) {
+        e.preventDefault();
+        $('.slidesjs-next').click();
+    });
 });

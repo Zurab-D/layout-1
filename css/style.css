@@ -138,9 +138,41 @@ header a:hover {
     padding: 66px 0;
 }
 /*slider*/
-.slider {
+ #slides {
+    display:none;
+    width: 800px;
+    margin: 0 auto;
+}
+.site-slider {
+    padding: 40px 0;
     background: #f06c64;
     border-bottom: 6px solid #ea676b;
+    text-align: center;
+}
+.site-slider img {
+    display: inline-block;
+    width: 800px !important;
+    height: 500px;
+}
+.slider-control {
+    display: inline-block;
+    margin-top: 236px;
+    height: 27px;
+    width: 16px;
+}
+.control-prev {
+    float: left;
+    background: url('../images/slider-controls.png') no-repeat;
+}
+.control-prev:hover {
+    background: url('../images/slider-controls.png') no-repeat -32px 0px;
+}
+.control-next {
+    float: right;
+    background: url('../images/slider-controls.png') no-repeat -16px 0px;
+}
+.control-next:hover {
+    background: url('../images/slider-controls.png') no-repeat -48px 0px;
 }
 /*features*/
 .features {
