@@ -33,6 +33,7 @@ $(document).ready(function () {
         $('.work-buttons').children().each(function () {
             $(this).removeClass('active');
         });
+        $(this).addClass('active');
         worksAll.show('slow', function () {
             worksAll.appendTo('.works-flow');
         });
