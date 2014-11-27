@@ -30,6 +30,9 @@ $(document).ready(function () {
     });
     // works filter
     $(buttonAll).on('click', function () {
+        $('.work-buttons').children().each(function () {
+            $(this).removeClass('active');
+        });
         worksAll.show('slow', function () {
             worksAll.appendTo('.works-flow');
         });
