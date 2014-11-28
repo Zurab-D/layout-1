@@ -59,7 +59,7 @@ $(document).ready(function () {
     });
     $('.control-prev').click(function(e) {
         e.preventDefault();
-        $('.slidesjs-next').click();
+        $('.slidesjs-prev').click();
     });
     // smooth scroll
     var hashTagActive = "";
