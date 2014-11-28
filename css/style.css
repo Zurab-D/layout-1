@@ -427,6 +427,9 @@ footer {
 .copyright a {
     color: #666d89;
 }
+.copyright a:hover {
+    color: #9199b7;
+}
 .social-icons {
     margin-top: 22px;
     height: 32px;
