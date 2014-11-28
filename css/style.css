@@ -42,9 +42,10 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-/*font*/
+/*font + min width*/
 body {
     font-family: 'Lato', Tahoma, sans-serif;
+    min-width: 1200px;
 }
 /*clearfix*/
 .clearfix:after {
