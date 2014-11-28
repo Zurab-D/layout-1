@@ -322,6 +322,14 @@ header a:hover {
     font-size: 12px;
     line-height: 21.56px;
 }
+/*remove chrome outline */
+*:focus {
+    outline: 0;
+}
+/*remove ie textarea scroll*/
+textarea {
+    overflow: auto;
+}
 /*icons*/
 .small-icon {
     display: inline-block;
