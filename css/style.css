@@ -359,6 +359,18 @@ header a:hover {
 .icon-li {
     background: url('../images/social-icons.png') no-repeat -96px 0px;
 }
+.icon-fb:hover {
+    background: url('../images/social-icons.png') no-repeat 0px -32px;
+}
+.icon-gp:hover {
+    background: url('../images/social-icons.png') no-repeat -32px -32px;
+}
+.icon-tw:hover {
+    background: url('../images/social-icons.png') no-repeat -64px -32px;
+}
+.icon-li:hover {
+    background: url('../images/social-icons.png') no-repeat -96px -32px;
+}
 .large-icon {
     display: inline-block;
     height: 59px;
@@ -411,6 +423,9 @@ footer {
     line-height: 76px;
     display: inline-block;
     float: left;
+}
+.copyright a {
+    color: #666d89;
 }
 .social-icons {
     margin-top: 22px;
